@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Football Hub - Your Ultimate Football Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+        }
+        /* Custom gradient for the hero section background, inspired by the demo */
+        .hero-gradient {
+            background: linear-gradient(to right, #ffffff 50%, #ef4444 100%); /* White to red gradient */
+        }
+        /* Style for the 'BUY NOW' button */
+        .btn-primary {
+            background-color: #ef4444; /* Red */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #dc2626; /* Darker red on hover */
+        }
+        /* Style for the navigation links */
+        .nav-link {
+            color: #374151; /* Dark gray */
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ef4444; /* Red on hover */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 lg:px-24 rounded-b-lg">
+        <nav class="flex items-center justify-between">
+            <div class="text-2xl font-bold text-gray-800">The Football Hub</div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#" class="nav-link">HOME</a></li>
+                <li><a href="#" class="nav-link">NEW ARRIVALS</a></li>
+                <li><a href="#" class="nav-link">JERSEYS</a></li>
+                <li><a href="#" class="nav-link">EQUIPMENT</a></li>
+                <li><a href="#" class="nav-link">ABOUT US</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 md:p-8 lg:p-12">
+        <section class="hero-gradient flex flex-col md:flex-row items-center justify-between rounded-xl shadow-lg overflow-hidden">
+            <div class="w-full md:w-1/2 p-8 md:p-12 lg:p-16 text-center md:text-left">
+                <p class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-2">LIMITED TIME OFFER</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    SCORE BIG WITH THE LATEST GEAR
+                </h1>
+                <p class="text-base md:text-lg text-gray-700 mb-8 max-w-md mx-auto md:mx-0">
+                    Discover our exclusive collection of football jerseys, boots, and equipment. Elevate your game with top-quality products.
+                </p>
+                <button class="btn-primary">
+                    SHOP NOW
+                </button>
+            </div>
+
+            <div class="w-full md:w-1/2 flex items-center justify-center p-4 md:p-0">
+                <img src="https://placehold.co/600x400/ef4444/ffffff?text=FOOTBALL+HERO" alt="Football Player with Ball" class="w-full h-auto max-w-lg rounded-xl object-cover shadow-md">
+            </div>
+        </section>
+
+        <section class="mt-12 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">QUICK ACCESS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Jerseys</h3>
+                    <p class="text-gray-600">Official club & national team kits.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-3 inline-block">Explore Jerseys &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Football Boots</h3>
+                    <p class="text-gray-600">Find your perfect pair for any pitch.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-3 inline-block">Shop Boots &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Equipment</h3>
+                    <p class="text-gray-600">Balls, training gear, and accessories.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-3 inline-block">View Equipment &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Fan Zone</h3>
+                    <p class="text-gray-600">Merchandise for the ultimate fan.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-3 inline-block">Visit Fan Zone &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            &copy; 2025 The Football Hub. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
